@@ -1,0 +1,124 @@
+header {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    size: 40px;
+    line-height: 52px;
+    margin-right: 110px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-left: 260px;
+}
+.carousel img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel img {
+        width: 116px;
+        height: 116px;
+        border-radius: 50%;
+        border: 6px solid #FB5607;
+        margin-top:-5px;
+        object-fit: cover;   
+        align-items: center; 
+}
+
+.white-text {
+    color: #fff;
+}
+
+.violet-text {
+    color: #8338EC;
+}
+
+.captext {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    max-height: 200px;
+}
+
+.name {
+    color: #FB5607;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 21.6px;
+}
+
+.p {
+    margin-top: 25px;
+    line-height: 19.2px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+h3 {
+    color: #FB5607;
+    margin-top: 30px;
+    margin-bottom: -15px;
+}
+
+.ket {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.4px;
+}
+
+.slides {
+    position: relative;
+}
+
+.slide {
+    display: none; 
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .slides #s1,
+#slide2:checked ~ .slides #s2,
+#slide3:checked ~ .slides #s3,
+#slide4:checked ~ .slides #s4,
+#slide5:checked ~ .slides #s5 {
+    display: block;
+}
+
+.carousel-buttons {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 90px;
+}
+
+.carousel-button {
+    background-color: #626262;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+   display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+    background-color: #FB5607;
+}
+
+#slide1:checked ~ .carousel-buttons label[for="slide1"],
+#slide2:checked ~ .carousel-buttons label[for="slide2"],
+#slide3:checked ~ .carousel-buttons label[for="slide3"],
+#slide4:checked ~ .carousel-buttons label[for="slide4"],
+#slide5:checked ~ .carousel-buttons label[for="slide5"] {
+    background-color: #FB5607;
+}
